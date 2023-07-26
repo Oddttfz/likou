@@ -1,0 +1,9 @@
+#include<map>
+map<int,int>mp;
+    bool static cmp(pair<int,int>&p1,pair<int,int>&p2){
+               return p1.second>p2.second;
+           }
+int main{
+    vector<pair<int,int>> ve(mp.begin(),mp.end());
+    sort(ve.begin(),ve.end(),cmp);
+}
